@@ -1,0 +1,189 @@
+2023-01-30T17:17:27.507+05:30  INFO 13120 --- [restartedMain] com.extended.AdminMockitoApplication     : Starting AdminMockitoApplication using Java 17.0.5 with PID 13120 (C:\Users\lilly\eclipse-extended-workspace\admin_mockito\target\classes started by lilly in C:\Users\lilly\eclipse-extended-workspace\admin_mockito)
+2023-01-30T17:17:27.515+05:30  INFO 13120 --- [restartedMain] com.extended.AdminMockitoApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-01-30T17:17:27.573+05:30  INFO 13120 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-30T17:17:27.573+05:30  INFO 13120 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-30T17:17:28.292+05:30  INFO 13120 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-30T17:17:28.332+05:30  INFO 13120 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 0 JPA repository interfaces.
+2023-01-30T17:17:28.998+05:30  INFO 13120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-01-30T17:17:29.016+05:30  INFO 13120 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-30T17:17:29.016+05:30  INFO 13120 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-01-30T17:17:29.108+05:30  INFO 13120 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-30T17:17:29.109+05:30  INFO 13120 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1535 ms
+2023-01-30T17:17:29.309+05:30  INFO 13120 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-30T17:17:29.404+05:30  INFO 13120 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-30T17:17:29.772+05:30  WARN 13120 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-30T17:17:29.937+05:30  INFO 13120 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-30T17:17:30.394+05:30  INFO 13120 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e03f7ea
+2023-01-30T17:17:30.399+05:30  INFO 13120 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-30T17:17:30.507+05:30  INFO 13120 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-01-30T17:17:30.978+05:30  INFO 13120 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-30T17:17:30.998+05:30  INFO 13120 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-30T17:17:31.172+05:30  WARN 13120 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-30T17:17:31.723+05:30  INFO 13120 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-01-30T17:17:31.792+05:30  INFO 13120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-01-30T17:17:31.805+05:30  INFO 13120 --- [restartedMain] com.extended.AdminMockitoApplication     : Started AdminMockitoApplication in 4.771 seconds (process running for 5.916)
+2023-01-30T17:19:15.808+05:30  INFO 13120 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-30T17:19:15.809+05:30  INFO 13120 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-30T17:19:15.810+05:30  INFO 13120 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-30T17:19:16.071+05:30  WARN 13120 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.extended.reponse.FinalResponse com.extended.controller.RoleController.InsertingRoleRecord(com.extended.bean.Role) with 2 errors: [Field error in object 'role' on field 'roleType': rejected value []; codes [NotBlank.role.roleType,NotBlank.roleType,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [role.roleType,roleType]; arguments []; default message [roleType]]; default message [must not be blank]] [Field error in object 'role' on field 'roleName': rejected value []; codes [NotBlank.role.roleName,NotBlank.roleName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [role.roleName,roleName]; arguments []; default message [roleName]]; default message [must not be blank]] ]
+2023-01-30T17:19:28.283+05:30  WARN 13120 --- [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.extended.reponse.FinalResponse com.extended.controller.RoleController.InsertingRoleRecord(com.extended.bean.Role) with 3 errors: [Field error in object 'role' on field 'roleName': rejected value [null]; codes [NotBlank.role.roleName,NotBlank.roleName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [role.roleName,roleName]; arguments []; default message [roleName]]; default message [must not be blank]] [Field error in object 'role' on field 'roleName': rejected value [null]; codes [NotNull.role.roleName,NotNull.roleName,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [role.roleName,roleName]; arguments []; default message [roleName]]; default message [roleName Should Be Mention]] [Field error in object 'role' on field 'roleType': rejected value []; codes [NotBlank.role.roleType,NotBlank.roleType,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [role.roleType,roleType]; arguments []; default message [roleType]]; default message [must not be blank]] ]
+2023-01-30T17:19:49.629+05:30  WARN 13120 --- [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.extended.reponse.FinalResponse com.extended.controller.RoleController.InsertingRoleRecord(com.extended.bean.Role) with 4 errors: [Field error in object 'role' on field 'roleName': rejected value [null]; codes [NotNull.role.roleName,NotNull.roleName,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [role.roleName,roleName]; arguments []; default message [roleName]]; default message [roleName Should Be Mention]] [Field error in object 'role' on field 'roleType': rejected value [null]; codes [NotNull.role.roleType,NotNull.roleType,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [role.roleType,roleType]; arguments []; default message [roleType]]; default message [roleType Should Be Mention]] [Field error in object 'role' on field 'roleType': rejected value [null]; codes [NotBlank.role.roleType,NotBlank.roleType,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [role.roleType,roleType]; arguments []; default message [roleType]]; default message [must not be blank]] [Field error in object 'role' on field 'roleName': rejected value [null]; codes [NotBlank.role.roleName,NotBlank.roleName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [role.roleName,roleName]; arguments []; default message [roleName]]; default message [must not be blank]] ]
+2023-01-30T17:20:04.579+05:30  WARN 13120 --- [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.extended.reponse.FinalResponse com.extended.controller.RoleController.InsertingRoleRecord(com.extended.bean.Role) with 3 errors: [Field error in object 'role' on field 'roleName': rejected value [null]; codes [NotBlank.role.roleName,NotBlank.roleName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [role.roleName,roleName]; arguments []; default message [roleName]]; default message [must not be blank]] [Field error in object 'role' on field 'roleName': rejected value [null]; codes [NotNull.role.roleName,NotNull.roleName,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [role.roleName,roleName]; arguments []; default message [roleName]]; default message [roleName Should Be Mention]] [Field error in object 'role' on field 'roleType': rejected value []; codes [NotBlank.role.roleType,NotBlank.roleType,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [role.roleType,roleType]; arguments []; default message [roleType]]; default message [must not be blank]] ]
+2023-01-30T17:20:27.692+05:30  INFO 13120 --- [http-nio-8081-exec-3] c.e.service.RoleServiceImplementation    : InsertingOneRoleRecord::input::role:Role(roleId=0, roleName=Javadeveloper, roleType=IT, createdDate=null, updatedDate=null)
+2023-01-30T17:20:34.334+05:30  INFO 13120 --- [http-nio-8081-exec-9] c.e.service.RoleServiceImplementation    : InsertingOneRoleRecord::input::role:Role(roleId=0, roleName=Javadeveloper, roleType=IT, createdDate=null, updatedDate=null)
+2023-01-30T17:21:49.961+05:30  INFO 13120 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-01-30T17:21:49.990+05:30  INFO 13120 --- [RMI TCP Connection(8)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-30T17:21:49.993+05:30  INFO 13120 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-01-30T17:21:50.010+05:30  INFO 13120 --- [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-30T17:21:50.016+05:30  INFO 13120 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-30T17:21:50.028+05:30  INFO 13120 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-30T22:33:39.431+05:30  INFO 8952 --- [main] c.extended.AdminMockitoApplicationTests  : Starting AdminMockitoApplicationTests using Java 17.0.5 with PID 8952 (started by lilly in C:\Users\lilly\eclipse-extended-workspace\admin_mockito)
+2023-01-30T22:33:39.434+05:30  INFO 8952 --- [main] c.extended.AdminMockitoApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2023-01-30T22:33:40.701+05:30  INFO 8952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-30T22:33:40.752+05:30  INFO 8952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 0 JPA repository interfaces.
+2023-01-30T22:33:41.525+05:30  INFO 8952 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-30T22:33:41.821+05:30  INFO 8952 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-30T22:33:42.260+05:30  WARN 8952 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-30T22:33:42.688+05:30  INFO 8952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-30T22:33:43.415+05:30  INFO 8952 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@196e494d
+2023-01-30T22:33:43.420+05:30  INFO 8952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-30T22:33:43.624+05:30  INFO 8952 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-01-30T22:33:44.462+05:30  INFO 8952 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-30T22:33:44.500+05:30  INFO 8952 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-30T22:33:44.881+05:30  WARN 8952 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-30T22:33:45.518+05:30  INFO 8952 --- [main] c.extended.AdminMockitoApplicationTests  : Started AdminMockitoApplicationTests in 6.745 seconds (process running for 10.572)
+2023-01-30T22:33:46.891+05:30  INFO 8952 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: 0
+2023-01-30T22:33:46.907+05:30  INFO 8952 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: 1
+2023-01-30T22:33:46.912+05:30  INFO 8952 --- [main] c.e.service.RoleServiceImplementation    : GetAllRoleRecords:: input:: role: 
+2023-01-30T22:33:46.914+05:30  INFO 8952 --- [main] c.e.service.RoleServiceImplementation    : DeleteingRoleRecord:: input:: role: 1
+2023-01-30T22:33:46.921+05:30  INFO 8952 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: [Role(roleId=0, roleName=HR, roleType=IT, createdDate=null, updatedDate=null)]
+2023-01-30T22:33:46.927+05:30  INFO 8952 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: null
+2023-01-30T22:33:46.930+05:30  INFO 8952 --- [main] c.e.service.RoleServiceImplementation    : UpadatingRoleRecord:: input:: role: null
+2023-01-30T22:33:46.933+05:30  INFO 8952 --- [main] c.e.service.RoleServiceImplementation    : UpadatingRoleRecord:: input:: role: Role(roleId=1, roleName=Java Developer, roleType=IT, createdDate=null, updatedDate=null)
+2023-01-30T22:33:46.937+05:30  INFO 8952 --- [main] c.e.service.RoleServiceImplementation    : InsertingOneRoleRecord::input::role:Role(roleId=0, roleName=HR, roleType=IT, createdDate=null, updatedDate=null)
+2023-01-30T22:33:46.942+05:30  INFO 8952 --- [main] c.e.service.RoleServiceImplementation    : DeleteingRoleRecord:: input:: role: 0
+2023-01-30T22:33:46.945+05:30  INFO 8952 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: [Role(roleId=0, roleName=HR, roleType=IT, createdDate=null, updatedDate=null), Role(roleId=0, roleName=HR, roleType=IT, createdDate=null, updatedDate=null)]
+2023-01-30T22:33:46.947+05:30  INFO 8952 --- [main] c.e.service.RoleServiceImplementation    : GetAllRoleRecords:: input:: role: 
+2023-01-30T22:33:47.278+05:30  INFO 8952 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-30T22:33:47.281+05:30  INFO 8952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-30T22:33:47.294+05:30  INFO 8952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-30T22:39:09.742+05:30  INFO 15108 --- [main] c.extended.AdminMockitoApplicationTests  : Starting AdminMockitoApplicationTests using Java 17.0.5 with PID 15108 (started by lilly in C:\Users\lilly\eclipse-extended-workspace\admin_mockito)
+2023-01-30T22:39:09.750+05:30  INFO 15108 --- [main] c.extended.AdminMockitoApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2023-01-30T22:39:11.095+05:30  INFO 15108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-30T22:39:11.156+05:30  INFO 15108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 0 JPA repository interfaces.
+2023-01-30T22:39:11.988+05:30  INFO 15108 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-30T22:39:12.122+05:30  INFO 15108 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-30T22:39:12.644+05:30  WARN 15108 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-30T22:39:13.124+05:30  INFO 15108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-30T22:39:13.907+05:30  INFO 15108 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@374b1d85
+2023-01-30T22:39:13.910+05:30  INFO 15108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-30T22:39:14.078+05:30  INFO 15108 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-01-30T22:39:14.829+05:30  INFO 15108 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-30T22:39:14.860+05:30  INFO 15108 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-30T22:39:15.296+05:30  WARN 15108 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-30T22:39:15.897+05:30  INFO 15108 --- [main] c.extended.AdminMockitoApplicationTests  : Started AdminMockitoApplicationTests in 6.858 seconds (process running for 10.637)
+2023-01-30T22:39:16.903+05:30  INFO 15108 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: 0
+2023-01-30T22:39:16.910+05:30  INFO 15108 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: 1
+2023-01-30T22:39:16.914+05:30  INFO 15108 --- [main] c.e.service.RoleServiceImplementation    : GetAllRoleRecords:: input:: role: 
+2023-01-30T22:39:16.918+05:30  INFO 15108 --- [main] c.e.service.RoleServiceImplementation    : DeleteingRoleRecord:: input:: role: 1
+2023-01-30T22:39:16.925+05:30  INFO 15108 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: [Role(roleId=0, roleName=HR, roleType=IT, createdDate=null, updatedDate=null)]
+2023-01-30T22:39:16.930+05:30  INFO 15108 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: null
+2023-01-30T22:39:16.934+05:30  INFO 15108 --- [main] c.e.service.RoleServiceImplementation    : UpadatingRoleRecord:: input:: role: null
+2023-01-30T22:39:16.939+05:30  INFO 15108 --- [main] c.e.service.RoleServiceImplementation    : UpadatingRoleRecord:: input:: role: Role(roleId=1, roleName=Java Developer, roleType=IT, createdDate=null, updatedDate=null)
+2023-01-30T22:39:16.943+05:30  INFO 15108 --- [main] c.e.service.RoleServiceImplementation    : InsertingOneRoleRecord::input::role:Role(roleId=0, roleName=HR, roleType=IT, createdDate=null, updatedDate=null)
+2023-01-30T22:39:16.947+05:30  INFO 15108 --- [main] c.e.service.RoleServiceImplementation    : DeleteingRoleRecord:: input:: role: 0
+2023-01-30T22:39:16.951+05:30  INFO 15108 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: [Role(roleId=0, roleName=HR, roleType=IT, createdDate=null, updatedDate=null), Role(roleId=0, roleName=HR, roleType=IT, createdDate=null, updatedDate=null)]
+2023-01-30T22:39:16.956+05:30  INFO 15108 --- [main] c.e.service.RoleServiceImplementation    : GetAllRoleRecords:: input:: role: 
+2023-01-30T22:39:17.263+05:30  INFO 15108 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-30T22:39:17.267+05:30  INFO 15108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-30T22:39:17.283+05:30  INFO 15108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-30T22:40:13.995+05:30  INFO 19740 --- [main] c.extended.AdminMockitoApplicationTests  : Starting AdminMockitoApplicationTests using Java 17.0.5 with PID 19740 (started by lilly in C:\Users\lilly\eclipse-extended-workspace\admin_mockito)
+2023-01-30T22:40:13.998+05:30  INFO 19740 --- [main] c.extended.AdminMockitoApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2023-01-30T22:40:15.120+05:30  INFO 19740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-30T22:40:15.173+05:30  INFO 19740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 0 JPA repository interfaces.
+2023-01-30T22:40:15.882+05:30  INFO 19740 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-30T22:40:16.006+05:30  INFO 19740 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-30T22:40:16.375+05:30  WARN 19740 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-30T22:40:16.777+05:30  INFO 19740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-30T22:40:17.338+05:30  INFO 19740 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f05d2bf
+2023-01-30T22:40:17.342+05:30  INFO 19740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-30T22:40:17.487+05:30  INFO 19740 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-01-30T22:40:18.085+05:30  INFO 19740 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-30T22:40:18.107+05:30  INFO 19740 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-30T22:40:18.455+05:30  WARN 19740 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-30T22:40:19.094+05:30  INFO 19740 --- [main] c.extended.AdminMockitoApplicationTests  : Started AdminMockitoApplicationTests in 5.719 seconds (process running for 9.333)
+2023-01-30T22:40:20.076+05:30  INFO 19740 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: 0
+2023-01-30T22:40:20.080+05:30  INFO 19740 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: 1
+2023-01-30T22:40:20.083+05:30  INFO 19740 --- [main] c.e.service.RoleServiceImplementation    : GetAllRoleRecords:: input:: role: 
+2023-01-30T22:40:20.088+05:30  INFO 19740 --- [main] c.e.service.RoleServiceImplementation    : DeleteingRoleRecord:: input:: role: 1
+2023-01-30T22:40:20.095+05:30  INFO 19740 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: [com.extended.bean.Role@774fa82b]
+2023-01-30T22:40:20.100+05:30  INFO 19740 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: null
+2023-01-30T22:40:20.106+05:30  INFO 19740 --- [main] c.e.service.RoleServiceImplementation    : UpadatingRoleRecord:: input:: role: null
+2023-01-30T22:40:20.109+05:30  INFO 19740 --- [main] c.e.service.RoleServiceImplementation    : UpadatingRoleRecord:: input:: role: com.extended.bean.Role@1b4c8306
+2023-01-30T22:40:20.112+05:30  INFO 19740 --- [main] c.e.service.RoleServiceImplementation    : InsertingOneRoleRecord::input::role:com.extended.bean.Role@4dd1d767
+2023-01-30T22:40:20.116+05:30  INFO 19740 --- [main] c.e.service.RoleServiceImplementation    : DeleteingRoleRecord:: input:: role: 0
+2023-01-30T22:40:20.121+05:30  INFO 19740 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: [com.extended.bean.Role@1ec5ade, com.extended.bean.Role@6d0acf9a]
+2023-01-30T22:40:20.126+05:30  INFO 19740 --- [main] c.e.service.RoleServiceImplementation    : GetAllRoleRecords:: input:: role: 
+2023-01-30T22:40:20.411+05:30  INFO 19740 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-30T22:40:20.416+05:30  INFO 19740 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-30T22:40:20.431+05:30  INFO 19740 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-30T22:41:19.669+05:30  INFO 21892 --- [main] c.extended.AdminMockitoApplicationTests  : Starting AdminMockitoApplicationTests using Java 17.0.5 with PID 21892 (started by lilly in C:\Users\lilly\eclipse-extended-workspace\admin_mockito)
+2023-01-30T22:41:19.671+05:30  INFO 21892 --- [main] c.extended.AdminMockitoApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2023-01-30T22:41:20.983+05:30  INFO 21892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-30T22:41:21.044+05:30  INFO 21892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 0 JPA repository interfaces.
+2023-01-30T22:41:21.825+05:30  INFO 21892 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-30T22:41:21.967+05:30  INFO 21892 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-30T22:41:22.354+05:30  WARN 21892 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-30T22:41:22.710+05:30  INFO 21892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-30T22:41:23.392+05:30  INFO 21892 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@371dc46e
+2023-01-30T22:41:23.399+05:30  INFO 21892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-30T22:41:23.561+05:30  INFO 21892 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-01-30T22:41:24.344+05:30  INFO 21892 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-30T22:41:24.368+05:30  INFO 21892 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-30T22:41:24.751+05:30  WARN 21892 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-30T22:41:25.346+05:30  INFO 21892 --- [main] c.extended.AdminMockitoApplicationTests  : Started AdminMockitoApplicationTests in 6.393 seconds (process running for 10.499)
+2023-01-30T22:41:26.330+05:30  INFO 21892 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: 0
+2023-01-30T22:41:26.336+05:30  INFO 21892 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: 1
+2023-01-30T22:41:26.340+05:30  INFO 21892 --- [main] c.e.service.RoleServiceImplementation    : GetAllRoleRecords:: input:: role: 
+2023-01-30T22:41:26.357+05:30  INFO 21892 --- [main] c.e.service.RoleServiceImplementation    : DeleteingRoleRecord:: input:: role: 1
+2023-01-30T22:41:26.370+05:30  INFO 21892 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: [com.extended.bean.Role@3dc4e185]
+2023-01-30T22:41:26.380+05:30  INFO 21892 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: null
+2023-01-30T22:41:26.385+05:30  INFO 21892 --- [main] c.e.service.RoleServiceImplementation    : UpadatingRoleRecord:: input:: role: null
+2023-01-30T22:41:26.390+05:30  INFO 21892 --- [main] c.e.service.RoleServiceImplementation    : UpadatingRoleRecord:: input:: role: com.extended.bean.Role@5b0fad3d
+2023-01-30T22:41:26.400+05:30  INFO 21892 --- [main] c.e.service.RoleServiceImplementation    : InsertingOneRoleRecord::input::role:com.extended.bean.Role@7931048d
+2023-01-30T22:41:26.406+05:30  INFO 21892 --- [main] c.e.service.RoleServiceImplementation    : DeleteingRoleRecord:: input:: role: 0
+2023-01-30T22:41:26.413+05:30  INFO 21892 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: [com.extended.bean.Role@3f159c49, com.extended.bean.Role@4080bcd9]
+2023-01-30T22:41:26.418+05:30  INFO 21892 --- [main] c.e.service.RoleServiceImplementation    : GetAllRoleRecords:: input:: role: 
+2023-01-30T22:41:26.805+05:30  INFO 21892 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-30T22:41:26.810+05:30  INFO 21892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-30T22:41:26.819+05:30  INFO 21892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-30T22:42:18.659+05:30  INFO 13728 --- [main] c.extended.AdminMockitoApplicationTests  : Starting AdminMockitoApplicationTests using Java 17.0.5 with PID 13728 (started by lilly in C:\Users\lilly\eclipse-extended-workspace\admin_mockito)
+2023-01-30T22:42:18.661+05:30  INFO 13728 --- [main] c.extended.AdminMockitoApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2023-01-30T22:42:19.838+05:30  INFO 13728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-30T22:42:19.887+05:30  INFO 13728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 0 JPA repository interfaces.
+2023-01-30T22:42:20.607+05:30  INFO 13728 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-30T22:42:20.724+05:30  INFO 13728 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-30T22:42:21.093+05:30  WARN 13728 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-30T22:42:21.440+05:30  INFO 13728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-30T22:42:22.123+05:30  INFO 13728 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50630ff7
+2023-01-30T22:42:22.130+05:30  INFO 13728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-30T22:42:22.384+05:30  INFO 13728 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-01-30T22:42:23.221+05:30  INFO 13728 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-30T22:42:23.249+05:30  INFO 13728 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-30T22:42:23.655+05:30  WARN 13728 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-30T22:42:24.298+05:30  INFO 13728 --- [main] c.extended.AdminMockitoApplicationTests  : Started AdminMockitoApplicationTests in 6.228 seconds (process running for 10.135)
+2023-01-30T22:42:25.627+05:30  INFO 13728 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: 0
+2023-01-30T22:42:25.634+05:30  INFO 13728 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: 1
+2023-01-30T22:42:25.637+05:30  INFO 13728 --- [main] c.e.service.RoleServiceImplementation    : GetAllRoleRecords:: input:: role: 
+2023-01-30T22:42:25.642+05:30  INFO 13728 --- [main] c.e.service.RoleServiceImplementation    : DeleteingRoleRecord:: input:: role: 1
+2023-01-30T22:42:25.649+05:30  INFO 13728 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: [Role(roleId=0, roleName=HR, roleType=IT, createdDate=null, updatedDate=null)]
+2023-01-30T22:42:25.655+05:30  INFO 13728 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: null
+2023-01-30T22:42:25.662+05:30  INFO 13728 --- [main] c.e.service.RoleServiceImplementation    : UpadatingRoleRecord:: input:: role: null
+2023-01-30T22:42:25.666+05:30  INFO 13728 --- [main] c.e.service.RoleServiceImplementation    : UpadatingRoleRecord:: input:: role: Role(roleId=1, roleName=Java Developer, roleType=IT, createdDate=null, updatedDate=null)
+2023-01-30T22:42:25.669+05:30  INFO 13728 --- [main] c.e.service.RoleServiceImplementation    : InsertingOneRoleRecord::input::role:Role(roleId=0, roleName=HR, roleType=IT, createdDate=null, updatedDate=null)
+2023-01-30T22:42:25.674+05:30  INFO 13728 --- [main] c.e.service.RoleServiceImplementation    : DeleteingRoleRecord:: input:: role: 0
+2023-01-30T22:42:25.679+05:30  INFO 13728 --- [main] c.e.service.RoleServiceImplementation    : InsertingMultipleRoleRecord:: input:: role: [Role(roleId=0, roleName=HR, roleType=IT, createdDate=null, updatedDate=null), Role(roleId=0, roleName=HR, roleType=IT, createdDate=null, updatedDate=null)]
+2023-01-30T22:42:25.683+05:30  INFO 13728 --- [main] c.e.service.RoleServiceImplementation    : GetAllRoleRecords:: input:: role: 
+2023-01-30T22:42:25.998+05:30  INFO 13728 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-30T22:42:26.003+05:30  INFO 13728 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-30T22:42:26.178+05:30  INFO 13728 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
